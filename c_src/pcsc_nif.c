@@ -359,7 +359,7 @@ pcsc_nif_watch_thread(void *arg)
 	struct pcsc_nif_ctx *ctx = arg;
 	ErlNifEnv *msgenv;
 	size_t cnt, max, sz, ocnt;
-	size_t rdrslen;
+	uint32_t rdrslen;
 	size_t i;
 	SCARD_READERSTATE *tpl;
 	SCARD_READERSTATE *st;
